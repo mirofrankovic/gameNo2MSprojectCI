@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 html,body {
     margin:0;
     padding: 0;
@@ -5,17 +11,29 @@ html,body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     height: 100%;
     position:relative;
+    background-color: #dfd4a7;
+    justify-content: center;
+    align-items: center;
 }
 
-.riddle-container{
+.score-area{
     margin-left: auto;
     margin-right: auto;
-    width: 8em;
+    width: 30em;
     min-height: 100wh;
     overflow: hidden;
     display:block;
     position:relative;
     padding-bottom: 100px;
+}
+
+.main {
+    justify-content: center;
+    /*display: flex;*/
+}
+.quiz {
+    justify-content: center;
+    display: flex;
 }
 
 footer {

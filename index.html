@@ -56,32 +56,33 @@
 </nav>
 
 </header>
-
-<div class="container-fluid">
-
-
-      <div class="riddle-container">
-            <section class="top-list">
-            <div class="center">Welcom To Riddle Me This Game</div>
-            <div id="riddle"></div>
-            </section>
-
-            <section class="question-list">
-            <div id="question"></div>
-            </section>
-
-            <section class="form-list">
-                        <form id="form" class="form-inline">
-                            <input class="form-control mr-sm-2" type="search" placeholder="Answer Question" aria-label="Search">
-                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Submit</button>
-                        </form>
-            </section>
-      </div>
-    <section class="counter-list">
-    <div id="answer">
+    
+    <section class="main">
+                <div class="score-area">
+                    <h3>You answered all of the questions!</h3>
+                    <p>Your Score Is:<span>%</span>correct! </p><p class="score"></p>
+                    <h4>Want to try it again?</h4>
+                    <button id="again" class="submit">Again</button>
+                </div> 
+                <div class="quiz">
+                    <div class="count">
+                        <p class="current">number</p><p style="margin-left:40px">  </p><p class="total"></p>
+                    </div>
+                     <h3 id="question"></h3>
+                    <div class="center-form">
+                        <input type="text" id="gh-username" value="question" oninput="fetchQuizInformation()" />
+                    
+                        <div id="gh-repo-data"></div>    <!--repo information-->
+                    </div> 
+                    <div id="quiz-data" class="quiz-data"></div>
+                    <button id="next" class="submit">Submit</button>
+                    <div class="mt30">
+                        <label for="questions">Number of questions</label>
+                        <input name="questions" id="questions" type="text" pattern="[0-9]*" />
+                    </div>  
+                    <button id="start" class="submit">Start</button>
+                </div> 
     </section>
-
-</div>
 
 <!-- Footer -->
 <footer class="page-footer font-small teal pt-4">
