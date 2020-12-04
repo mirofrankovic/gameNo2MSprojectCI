@@ -1,74 +1,144 @@
 {
- "questionary": [
-    {
-        "question": "How old is Guido?",
-        "attempts": 5,
-        "answers": ["3", "44", "30", "41", "50", "28"],
-        "correctAnswerIndex": 3,
-        "correctAnswerValue": "41"
-    },
-    {
-        "question": "How old is Miro?",
-        "attempts": 3,
-        "answers": ["3", "44", "30", "41", "50", "28"],
-        "correctAnswerIndex": 3,
-        "correctAnswerValue": "41"
-    },
-    {
-        "question": "Guido original contry is?",
-        "attempts": 5,
-        "answers": ["France", "Germany", "Cuba", "Canada", "Brazil", "USA"],
-        "correctAnswerIndex": 2,
-        "correctAnswerValue": "Cuba"
-    },
-    {
-        "question": "Where was Miro born?",
-        "attempts": 4,
-        "answers": ["Slovakia", "Germany", "Cuba", "Canada", "Brazil", "USA"],
-        "correctAnswerIndex": 0,
-        "correctAnswerValue": "Slovakia"
-    },
-    {
-        "question": "Where does Miro live?",
-        "attempts": 5,
-        "answers": ["Rio", "Manchester", "Tokyo", "New York", "Berlin", "Barcelona"],
-        "correctAnswerIndex": 1,
-        "correctAnswerValue": "Manchester"
-    },
-    {
-        "question": "Where Miro run his first maratthon?",
-        "attempts": 5,
-        "answers": ["Barcelona", "Rio", "Tokio", "Paris", "Kosice", "Gelnica"],
-        "correctAnswerIndex": 0,
-        "correctAnswerValue": "Barcelona"
-    },
-    {
-        "question": "How many bikes does have Miro?",
-        "attempts": 5,
-        "answers": ["0", "1", "2", "3", "4", "5"],
-        "correctAnswerIndex": 2,
-        "correctAnswerValue": "2"
-    },
-    {
-        "question": "What Slovak number styri is in English language?",
-        "attempts": 5,
-        "answers": ["2", "4", "6", "8", "10", "12"],
-        "correctAnswerIndex": 1,
-        "correctAnswerValue": "4"
-    },
-    {
-        "question": "Where was Miro living for 3 months in America?",
-        "attempts": 5,
-        "answers": ["New York", "Washinghton", "Chicago", "Denver", "Raleigh", "San Francisco"],
-        "correctAnswerIndex": 4,
-        "correctAnswerValue": "Raleigh"
-    },
-    {
-        "question": "Who is the most famous Slovak hero?",
-        "attempts": 5,
-        "answers": ["Miro", "Palo", "Fero", "Tibike", "Janko Hrasko", "Jurko Janosik"],
-        "correctAnswerIndex": 5,
-        "correctAnswerValue": "Jurko Janosik"
-    }
+    "questionary": [
+        {
+            "question": "How old is Guido?",
+            "attempts": 5,
+            "answers": [
+                "3",
+                "44",
+                "30",
+                "41",
+                "50",
+                "28"
+            ],
+            "correctAnswerIndex": 3,
+            "correctAnswerValue": "41"
+        },
+        {
+            "question": "How old is Miro?",
+            "attempts": 3,
+            "answers": [
+                "3",
+                "44",
+                "30",
+                "41",
+                "50",
+                "28"
+            ],
+            "correctAnswerIndex": 3,
+            "correctAnswerValue": "41"
+        },
+        {
+            "question": "Guido original contry is?",
+            "attempts": 5,
+            "answers": [
+                "France",
+                "Germany",
+                "Cuba",
+                "Canada",
+                "Brazil",
+                "USA"
+            ],
+            "correctAnswerIndex": 2,
+            "correctAnswerValue": "Cuba"
+        },
+        {
+            "question": "Where was Miro born?",
+            "attempts": 4,
+            "answers": [
+                "Slovakia",
+                "Germany",
+                "Cuba",
+                "Canada",
+                "Brazil",
+                "USA"
+            ],
+            "correctAnswerIndex": 0,
+            "correctAnswerValue": "Slovakia"
+        },
+        {
+            "question": "Where does Miro live?",
+            "attempts": 5,
+            "answers": [
+                "Rio",
+                "Manchester",
+                "Tokyo",
+                "New York",
+                "Berlin",
+                "Barcelona"
+            ],
+            "correctAnswerIndex": 1,
+            "correctAnswerValue": "Manchester"
+        },
+        {
+            "question": "Where Miro run his first maratthon?",
+            "attempts": 5,
+            "answers": [
+                "Barcelona",
+                "Rio",
+                "Tokio",
+                "Paris",
+                "Kosice",
+                "Gelnica"
+            ],
+            "correctAnswerIndex": 0,
+            "correctAnswerValue": "Barcelona"
+        },
+        {
+            "question": "How many bikes does have Miro?",
+            "attempts": 5,
+            "answers": [
+                "0",
+                "1",
+                "2",
+                "3",
+                "4",
+                "5"
+            ],
+            "correctAnswerIndex": 2,
+            "correctAnswerValue": "2"
+        },
+        {
+            "question": "What Slovak number styri is in English language?",
+            "attempts": 5,
+            "answers": [
+                "2",
+                "4",
+                "6",
+                "8",
+                "10",
+                "12"
+            ],
+            "correctAnswerIndex": 1,
+            "correctAnswerValue": "4"
+        },
+        {
+            "question": "Where was Miro living for 3 months in America?",
+            "attempts": 5,
+            "answers": [
+                "New York",
+                "Washinghton",
+                "Chicago",
+                "Denver",
+                "Raleigh",
+                "San Francisco"
+            ],
+            "correctAnswerIndex": 4,
+            "correctAnswerValue": "Raleigh"
+        },
+        {
+            "question": "Who is the most famous Slovak hero?",
+            "attempts": 5,
+            "answers": [
+                "Miro",
+                "Palo",
+                "Fero",
+                "Tibike",
+                "Janko Hrasko",
+                "Jurko Janosik"
+            ],
+            "correctAnswerIndex": 5,
+            "correctAnswerValue": "Jurko Janosik"
+        }
     ]
 }
