@@ -59,7 +59,9 @@
 
 </header>
     
-    <section class="main">
+    <div id="main-page">
+    <div class="text-center">
+    <div class="badge badge-primary text-wrap title-text" style="width: 9rem;">RIDDLE ME THIS....</div>
                 
                 <div class="score-area">
                     <div id="after-submit">
@@ -68,18 +70,23 @@
                         <h4>Want to try it again?</h4>
                         <button id="again" class="submit">Again</button>
                     </div> 
-                </div>  
-                <div class="score-area-game">
-                    <form id="game-content" name="game-content">
-                            <h3 id="question">Ask me Your Question Here...</h3>
-                            
-                             <input type="text" id="textbox" value="answer" name="question-user"/>
-                            
-                            <button id="button" type="button" onclick="loadQuestion()">Submit Answer</button>
-                    </form> 
-                </div>   
+                </div> 
+                <div id="game-show">
+                    <div class="score-area-game card">
+                        <form id="game-content" name="game-content" class="card-body">
+                                <h3 id="question">Ask me Your Question Here...</h3>
+                                
+                                <input type="text" id="textbox" value="answer" name="question-user"/>
+                                
+                                <button id="button" type="button" onclick="loadQuestion()">Submit Answer</button>
+                        </form> 
+                    </div> 
+                </div>      
                 
-    </section>
+    </div>
+
+
+
 
 <!-- Footer -->
 <footer class="page-footer font-small teal pt-4">

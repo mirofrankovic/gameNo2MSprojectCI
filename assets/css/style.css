@@ -51,9 +51,15 @@ html,body {
     display: flex;
 }
 
+.title-text{
+    font-size: 25px;
+    margin-top: 15px;
+}
+
 footer {
     position: absolute;
     bottom:0;
     width:100%;
 }
 
+/* ########### Media Query ############ */
