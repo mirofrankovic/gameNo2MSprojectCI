@@ -1,5 +1,5 @@
 /////////////////////////////////Initialization/////////////////////////////////////////
-let gameData=[];                    // my global  Json data
+let gameData;                    // my global  Json data
 let currentQuestionIndex=0;          // text question?????????????? is this also "question" from JSON?
 let score=0;                        // user current score
 let maxScore=0;
@@ -7,23 +7,28 @@ let answerSubmited=true;
 let showQuestion=true;
 
 
-$(document).ready(function(){
+// $(document).ready(function(){
 /**
    * Fetches game data from json file and writes response to global variable
    */
 
    function getGameData() {
-       fetch("assets/data/gameData.json")
-       .then(response => {
-           return response.json(); 
-        })                                // parse 
-       .then(fetchedData => {
-           gameData = fetchedData;
-       })
+       fetch("assets/data/gameData.json")                         //promise
+    //    .then(response => {
+        //    response = response.json();
+        //    gameData = response;
+        
+        // })                                // parse 
+       .then(response => response.json())
+            .then(function (data) {
+                gameData = data;
+                loadQuestion();
+            })
        .catch(error => {
            alert("Failed to get game data.");
            console.log(error);
            });
+        // loadQuestion();
 
    }
 // getGameData();
@@ -42,30 +47,17 @@ function loadingGame() {
 
 function loadQuestion() {  
 
+
+    // for loop
+
+
     let totalQuestion=0;                       // total questions 10
     let currentQuestionIndex=0; 
 
      console.log(gameData);
-
-    getGameData( function(question){            // "question" from JSON
-
-        this.question=questionary;
-
-
-
-        console.log("START ---------");
-        console.log(question);
-        console.log("END -----------");
-        
-        
-        document.getElementById("getQuestion").innerHTML= getQuestion;
-    });                     
-
-        
-
 }
 
-loadQuestion();
+getGameData();
 
 
 
@@ -96,7 +88,7 @@ function scoreGame(){
 
 
 
-});
+// });
 
 
 
