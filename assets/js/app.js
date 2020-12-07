@@ -1,13 +1,10 @@
 /////////////////////////////////Initialization/////////////////////////////////////////
-let gameData=[];        // my global data
-let currentQuestionIndex=0;
-let score=0;              //    user current score
+let gameData=[];                    // my global  Json data
+let currentQuestionIndex=0;          // text question?????????????? is this also "question" from JSON?
+let score=0;                        // user current score
 let maxScore=0;
 let answerSubmited=true;
 let showQuestion=true;
-
-
-
 
 
 $(document).ready(function(){
@@ -15,11 +12,11 @@ $(document).ready(function(){
    * Fetches game data from json file and writes response to global variable
    */
 
-   function getGameData(){
-       fetch("assets/data/gameData.json'")
+   function getGameData() {
+       fetch("assets/data/gameData.json")
        .then(response => {
-           return response.json();            // parse
-       })
+           return response.json(); 
+        })                                // parse 
        .then(fetchedData => {
            gameData = fetchedData;
        })
@@ -29,6 +26,7 @@ $(document).ready(function(){
            });
 
    }
+// getGameData();
 
 
 function loadingGame() {
@@ -40,20 +38,45 @@ function loadingGame() {
 }  
 
 
-   
-function loadQuestion (){
+   // load Qiuz Questions
 
-        // for(i=0;i<data.questionary.length;i++){                 
-        //     var data= questionary[i] 
-            
-        //     // console.log(questionary.question);
-        // }
+function loadQuestion() {  
+
+    let totalQuestion=0;                       // total questions 10
+    let currentQuestionIndex=0; 
+
+     console.log(gameData);
+
+    getGameData( function(question){            // "question" from JSON
+
+        this.question=questionary;
+
+
+
+        console.log("START ---------");
+        console.log(question);
+        console.log("END -----------");
+        
+        
+        document.getElementById("getQuestion").innerHTML= getQuestion;
+    });                     
+
+        
 
 }
 
 loadQuestion();
 
 
+
+
+         // play the game
+
+        // for(i=0;i<data.questionary.length;i++){                 
+        //      var data= questionary[i] 
+            
+        //      console.log(questionary.question);
+        //  }
 
 
 
