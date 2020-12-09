@@ -1,36 +1,37 @@
 /////////////////////////////////Initialization/////////////////////////////////////////
-let gameData;                    // my global  Json data
+// let gameData;                    // my global  Json data
 let currentQuestionIndex=0;          // text question?????????????? is this also "question" from JSON?
 let score=0;                        // user current score
 let maxScore=0;
 let answerSubmited=true;
 let showQuestion=true;
 
+console.log(gameData);
 
 // $(document).ready(function(){
 /**
    * Fetches game data from json file and writes response to global variable
    */
 
-   function getGameData() {
-       fetch("assets/data/gameData.json")                         //promise
-    //    .then(response => {
-        //    response = response.json();
-        //    gameData = response;
+//    function getGameData() {
+//        fetch("assets/data/gameData.json")                         //promise
+//     //    .then(response => {
+//         //    response = response.json();
+//         //    gameData = response;
         
-        // })                                // parse 
-       .then(response => response.json())
-            .then(function (data) {
-                gameData = data;
-                loadQuestion();
-            })
-       .catch(error => {
-           alert("Failed to get game data.");
-           console.log(error);
-           });
-        // loadQuestion();
+//         // })                                // parse 
+//        .then(response => response.json())
+//             .then(function (data) {
+//                 gameData = data;
+//                 loadQuestion();
+//             })
+//        .catch(error => {
+//            alert("Failed to get game data.");
+//            console.log(error);
+//            });
+//         // loadQuestion();
 
-   }
+//    }
 // getGameData();
 
 
@@ -47,12 +48,24 @@ function loadingGame() {
 
 function loadQuestion() {  
 
+                        
+    let q=gameData.questionary[currentQuestionIndex];   // created variable and use dot notation
+    document.getElementById("getQuetion").innerHTML=questionary;
+    // getQuestion.innerHTML="h3" + q.question + "h3";
 
-    // for loop
 
 
-    let totalQuestion=0;                       // total questions 10
-    let currentQuestionIndex=0; 
+    // for (var i=0; i< gameData.questionary.length; i++)
+                // gameData.questionary[i]
+
+                console.log(gameData);
+
+
+
+        // document.getElementById("getQuetion").innerHTML=questionary;
+
+
+
 
      console.log(gameData);
 }

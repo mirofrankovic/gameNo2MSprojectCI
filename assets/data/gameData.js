@@ -1,4 +1,4 @@
-{
+let gameData={
     "questionary": [
         {
             "question": "How old is Guido?",
