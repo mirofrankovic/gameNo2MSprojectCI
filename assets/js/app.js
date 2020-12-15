@@ -5,6 +5,7 @@ let score=0;                        // user current score
 let maxScore=0;
 let answerSubmited=true;
 let showQuestion=true;
+let answers = [];
 
 console.log(gameData);
 
@@ -34,8 +35,10 @@ console.log(gameData);
 //    }
 // getGameData();
 
+function quizRiddle (questions, quizContainer) {
 
-function loadingGame() {
+
+function loadingGame() { 
     $("#main-page").css("background-color", "red"
     // "url(https://images.app.goo.gl/mRFUenjEXmQ3NWws7)" // json file 
     );
@@ -46,10 +49,10 @@ function loadingGame() {
 
    // load Qiuz Questions
 
-function loadQuestion() {  
+function loadQuestion(questions, quizContainer) {                             // helper function
 
                         
-    let q=gameData.questionary[currentQuestionIndex];   // created variable and use dot notation
+    let q=gameData.questionary[currentQuestionIndex];   // created variable and use dot notation with an object and the key
     document.getElementById("getQuetion").innerHTML=questionary;
     // getQuestion.innerHTML="h3" + q.question + "h3";
 
@@ -97,11 +100,11 @@ function scoreGame(){
 
 
 
+}                                        // quizRiddle
 
 
 
 
-// });
 
 
 
